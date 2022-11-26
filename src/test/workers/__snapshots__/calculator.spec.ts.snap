@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`workers downloader should calculate, inprocess 1`] = `
+{
+  "number": NaN,
+}
+`;
+
+exports[`workers downloader should calculate, inprocess 2`] = `
+{
+  "number": NaN,
+}
+`;
