@@ -11,8 +11,8 @@
     "test:ci:apps": "pnpm test"
   },
   "dependencies": {
-    "@hyperstackjs/initializer-jwt": "1.0.28",
-    "hyperstack": "1.0.28",
+    "@hyperstackjs/initializer-jwt": "1.0.29",
+    "hyperstack": "1.0.29",
     "lodash": "4.17.21",
     "sqlite3": "5.1.2",
     "ts-node": "10.9.1",
@@ -21,7 +21,7 @@
     "zod": "3.19.1"
   },
   "devDependencies": {
-    "@hyperstackjs/testing": "1.0.28",
+    "@hyperstackjs/testing": "1.0.29",
     "@types/jest": "29.2.3",
     "@types/lodash": "4.14.190",
     "@types/node": "18.11.9",
