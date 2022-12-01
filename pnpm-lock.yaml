@@ -22,7 +22,7 @@ specifiers:
   ts-jest: 29.0.3
   ts-node: 10.9.1
   ts-node-dev: 2.0.0
-  tsc-alias: 1.7.1
+  tsc-alias: 1.8.0
   tsconfig-paths: 4.1.1
   tsup: 6.5.0
   typescript: 4.9.3
@@ -56,7 +56,7 @@ devDependencies:
   time-require: 0.1.2
   ts-jest: 29.0.3_4f6uxrzmuwipl5rr3bcogf6k74
   ts-node-dev: 2.0.0_yn3ubqnrkaxi363qbpt2wjwp2y
-  tsc-alias: 1.7.1
+  tsc-alias: 1.8.0
   tsup: 6.5.0_2dtigtkb225m7ii7q45utxqwgi
   typescript-cp: 0.1.6_typescript@4.9.3
 
@@ -8643,8 +8643,8 @@ packages:
       v8-compile-cache-lib: 3.0.1
       yn: 3.1.1
 
-  /tsc-alias/1.7.1:
-    resolution: {integrity: sha512-P4+0i+OB0hX17Ca+U6EJ4WZZ+OSupqW32VJ34N7g7+Ch+bwSx1AqYOvDdIVYEKymBh3dfG0t1qxbxPlBbtB1lQ==}
+  /tsc-alias/1.8.0:
+    resolution: {integrity: sha512-+8PJYBw63bkOwKwqjBRmM/jRdePg6ucLB+Rrr+MZAiTfwvk8Itg8FIn9CWE3voJUOvpFnwDjidHyaRRUyzORYA==}
     hasBin: true
     dependencies:
       chokidar: 3.5.3
