@@ -37,7 +37,7 @@
     "time-require": "0.1.2",
     "ts-jest": "29.0.3",
     "ts-node-dev": "2.0.0",
-    "tsc-alias": "1.8.0",
+    "tsc-alias": "1.8.1",
     "tsup": "6.5.0",
     "typescript-cp": "0.1.6"
   }
