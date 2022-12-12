@@ -14,11 +14,11 @@
     "@hyperstackjs/initializer-jwt": "1.0.29",
     "hyperstack": "1.0.29",
     "lodash": "4.17.21",
-    "sqlite3": "5.1.2",
+    "sqlite3": "5.1.3",
     "ts-node": "10.9.1",
     "tsconfig-paths": "4.1.1",
     "typescript": "4.9.4",
-    "zod": "3.19.1"
+    "zod": "3.20.0"
   },
   "devDependencies": {
     "@hyperstackjs/testing": "1.0.29",
