@@ -16,7 +16,7 @@ specifiers:
   node-dev: 7.4.3
   node-notifier: 10.0.1
   rimraf: 3.0.2
-  sqlite3: 5.1.2
+  sqlite3: 5.1.3
   stylomatic: 0.5.1
   time-require: 0.1.2
   ts-jest: 29.0.3
@@ -27,20 +27,20 @@ specifiers:
   tsup: 6.5.0
   typescript: 4.9.4
   typescript-cp: 0.1.6
-  zod: 3.19.1
+  zod: 3.20.0
 
 dependencies:
-  '@hyperstackjs/initializer-jwt': 1.0.29_n2b4z3a2xigdyt4kkgy47dyubm
-  hyperstack: 1.0.29_n2b4z3a2xigdyt4kkgy47dyubm
+  '@hyperstackjs/initializer-jwt': 1.0.29_msoyaxbofktpkdb5uq34j6i5zu
+  hyperstack: 1.0.29_msoyaxbofktpkdb5uq34j6i5zu
   lodash: 4.17.21
-  sqlite3: 5.1.2
+  sqlite3: 5.1.3
   ts-node: 10.9.1_73migmg77y47omm5253gettkxi
   tsconfig-paths: 4.1.1
   typescript: 4.9.4
-  zod: 3.19.1
+  zod: 3.20.0
 
 devDependencies:
-  '@hyperstackjs/testing': 1.0.29_n2b4z3a2xigdyt4kkgy47dyubm
+  '@hyperstackjs/testing': 1.0.29_msoyaxbofktpkdb5uq34j6i5zu
   '@types/jest': 29.2.4
   '@types/lodash': 4.14.191
   '@types/node': 18.11.13
@@ -70,7 +70,7 @@ packages:
       '@jridgewell/trace-mapping': 0.3.17
     dev: true
 
-  /@anatine/zod-openapi/1.10.0_jaqnetbcjcsissttd5r7v75rg4:
+  /@anatine/zod-openapi/1.10.0_z6zvkobwa427snffw2lq7cawr4:
     resolution: {integrity: sha512-tA9h61rKQ758g7dVp0F9QJjOG4qaVHacOfbL2p9Rzxeiz4eLMxZmF0KXgqE3aJ/0ZXQr28U5PGVnAYlP9ffNyQ==}
     peerDependencies:
       openapi3-ts: ^2.0.0 || ^3.0.0
@@ -78,7 +78,7 @@ packages:
     dependencies:
       openapi3-ts: 2.0.2
       ts-deepmerge: 4.0.0
-      zod: 3.19.1
+      zod: 3.20.0
 
   /@antfu/eslint-config-basic/0.27.0_5mle7isnkfgjmrghnnczirv6iy:
     resolution: {integrity: sha512-QgQVCiNiV9ZF7h09uBqTHctHDfVqJGIIpe0ZHCicLvUv233nAYeu4adAr53buhKrxDeoalozSs2ePiDiCyceTg==}
@@ -611,14 +611,14 @@ packages:
       execa: 5.1.1
       hygen: 6.2.11
       lodash: 4.17.21
-      zod: 3.19.1
+      zod: 3.20.0
     transitivePeerDependencies:
       - supports-color
 
   /@hyperstackjs/hypercontroller/1.0.29_mkdirp@1.0.4:
     resolution: {integrity: sha512-cGM26rHA0VJaWfqJhGHrW90doGT53VMMPXdItXnHoo8o9jRQq/EmKNqwstGBaaaX2TBc+b0mZ0mXaB9WFQ/NFA==}
     dependencies:
-      '@anatine/zod-openapi': 1.10.0_jaqnetbcjcsissttd5r7v75rg4
+      '@anatine/zod-openapi': 1.10.0_z6zvkobwa427snffw2lq7cawr4
       '@hyperstackjs/hypernight': 1.0.29
       ajv: 6.12.6
       async-express-mw: 0.1.2
@@ -640,19 +640,19 @@ packages:
       pino: 8.7.0
       reflect-metadata: 0.1.13
       uuid: 8.3.2
-      zod: 3.19.1
+      zod: 3.20.0
     transitivePeerDependencies:
       - mkdirp
       - supports-color
 
-  /@hyperstackjs/hypermodel/1.0.29_3mgsmy2g2tqqshmgdlghffbnsi:
+  /@hyperstackjs/hypermodel/1.0.29_srwmfatc432mmxar5hanixpgqe:
     resolution: {integrity: sha512-hTq5RfVZTGgnw1J3acsvHnovBLlb8r4Cx6IIkwy3ju+gpr6v5gFeUsAz+wpgFQOsNrchMlKcqN3zkJ0vv1EL7g==}
     dependencies:
       debug: 4.3.4
       glob: 8.0.3
       lodash: 4.17.21
       reflect-metadata: 0.1.13
-      sequelize: 6.26.0_sqlite3@5.1.2
+      sequelize: 6.26.0_sqlite3@5.1.3
       sequelize-typescript: 2.1.5_2tgb6voer22mswlm2iwjqzk4oe
       umzug: 3.2.1
     transitivePeerDependencies:
@@ -753,13 +753,13 @@ packages:
       - walrus
       - whiskers
 
-  /@hyperstackjs/initializer-jwt/1.0.29_n2b4z3a2xigdyt4kkgy47dyubm:
+  /@hyperstackjs/initializer-jwt/1.0.29_msoyaxbofktpkdb5uq34j6i5zu:
     resolution: {integrity: sha512-om57fqSunjGUk4YNU5YaiPmpFrD79Ao96ayM6vBVEU8Yw83maAdoR8uOZiaTdis7IAn7kCpvdYj2qnsyrSDyvw==}
     dependencies:
       '@hyperstackjs/hypercontroller': 1.0.29_mkdirp@1.0.4
       '@hyperstackjs/typings': 1.0.29
       debug: 4.3.4
-      hyperstack: 1.0.29_n2b4z3a2xigdyt4kkgy47dyubm
+      hyperstack: 1.0.29_msoyaxbofktpkdb5uq34j6i5zu
     transitivePeerDependencies:
       - '@types/node'
       - '@types/validator'
@@ -828,11 +828,11 @@ packages:
       - whiskers
     dev: false
 
-  /@hyperstackjs/testing/1.0.29_n2b4z3a2xigdyt4kkgy47dyubm:
+  /@hyperstackjs/testing/1.0.29_msoyaxbofktpkdb5uq34j6i5zu:
     resolution: {integrity: sha512-BQQspRO9FhtiyncTuUhBwjD+c0e/1DdAtoJE4jXtaWHOYlLECAcwbsphgaGfjZmD+TyapaUNvo0ZA7vxa1egVg==}
     dependencies:
       debug: 4.3.4
-      hyperstack: 1.0.29_n2b4z3a2xigdyt4kkgy47dyubm
+      hyperstack: 1.0.29_msoyaxbofktpkdb5uq34j6i5zu
       lodash: 4.17.21
       supertest: 6.3.3
       testcontainers: 8.16.0
@@ -5054,13 +5054,13 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /hyperstack/1.0.29_n2b4z3a2xigdyt4kkgy47dyubm:
+  /hyperstack/1.0.29_msoyaxbofktpkdb5uq34j6i5zu:
     resolution: {integrity: sha512-b60vFVQXQb/NNSsXhEYIxIzPve4EpWHu6RYLNsXOcxBEias3WTbikLLHWYJxsVpD8FBEZQcDY1z03Spg/E2Ikg==}
     dependencies:
       '@faker-js/faker': 7.6.0
       '@hyperstackjs/gen': 1.0.29
       '@hyperstackjs/hypercontroller': 1.0.29_mkdirp@1.0.4
-      '@hyperstackjs/hypermodel': 1.0.29_3mgsmy2g2tqqshmgdlghffbnsi
+      '@hyperstackjs/hypermodel': 1.0.29_srwmfatc432mmxar5hanixpgqe
       '@hyperstackjs/hyperportal': 1.0.29
       '@hyperstackjs/hyperworker': 1.0.29
       as-table: 1.0.55
@@ -5075,7 +5075,7 @@ packages:
       yargs: 17.6.2
       yargs-interactive: 3.0.1
       yargs-parser: 21.1.1
-      zod: 3.19.1
+      zod: 3.20.0
     transitivePeerDependencies:
       - '@types/node'
       - '@types/validator'
@@ -7877,9 +7877,9 @@ packages:
       '@types/validator': 13.7.10
       glob: 7.2.0
       reflect-metadata: 0.1.13
-      sequelize: 6.26.0_sqlite3@5.1.2
+      sequelize: 6.26.0_sqlite3@5.1.3
 
-  /sequelize/6.26.0_sqlite3@5.1.2:
+  /sequelize/6.26.0_sqlite3@5.1.3:
     resolution: {integrity: sha512-Xv82z1FdSn/qwB1IObSxIHV519cFk/vSD28vWs8Y0VucQLn7pK2x2jYjf2Qg/rBUQbCVprDdU7RPf+55rrkc0A==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
@@ -7924,7 +7924,7 @@ packages:
       retry-as-promised: 6.1.0
       semver: 7.3.8
       sequelize-pool: 7.1.0
-      sqlite3: 5.1.2
+      sqlite3: 5.1.3
       toposort-class: 1.0.1
       uuid: 8.3.2
       validator: 13.7.0
@@ -8109,8 +8109,8 @@ packages:
   /sprintf-js/1.1.2:
     resolution: {integrity: sha512-VE0SOVEHCk7Qc8ulkWw3ntAzXuqf7S2lvwQaDLRnUeIEaKNQJzV6BwmLKhOqT61aGhfUMrXeaBk+oDGCzvhcug==}
 
-  /sqlite3/5.1.2:
-    resolution: {integrity: sha512-D0Reg6pRWAFXFUnZKsszCI67tthFD8fGPewRddDCX6w4cYwz3MbvuwRICbL+YQjBAh9zbw+lJ/V9oC8nG5j6eg==}
+  /sqlite3/5.1.3:
+    resolution: {integrity: sha512-z9sfEGGv/40WfvjhFxPkvTaK8ahYSW/chR735Eokrwz20tHbZEtQpRXQ20qDdCVNzOKAOQEy4B9L2bdwGoKtoQ==}
     requiresBuild: true
     peerDependenciesMeta:
       node-gyp:
@@ -9202,8 +9202,8 @@ packages:
       readable-stream: 3.6.0
     dev: true
 
-  /zod/3.19.1:
-    resolution: {integrity: sha512-LYjZsEDhCdYET9ikFu6dVPGp2YH9DegXjdJToSzD9rO6fy4qiRYFoyEYwps88OseJlPyl2NOe2iJuhEhL7IpEA==}
+  /zod/3.20.0:
+    resolution: {integrity: sha512-ZWxs7oM5ixoo1BMoxTNeDMYSih/F/FUnExsnRtHT04rG6q0Bd74TKS45RGXw07TOalOZyyzdKaYH38k8yTEv9A==}
 
   github.com/jondot/openapi-snippet/78b7f5b115d4bfb99f10f21d9a3b0d19c54fc6e4_mkdirp@1.0.4:
     resolution: {tarball: https://codeload.github.com/jondot/openapi-snippet/tar.gz/78b7f5b115d4bfb99f10f21d9a3b0d19c54fc6e4}
