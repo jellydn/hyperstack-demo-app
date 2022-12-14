@@ -26,7 +26,7 @@ specifiers:
   tsconfig-paths: 4.1.1
   tsup: 6.5.0
   typescript: 4.9.4
-  typescript-cp: 0.1.6
+  typescript-cp: 0.1.7
   zod: 3.20.2
 
 dependencies:
@@ -58,7 +58,7 @@ devDependencies:
   ts-node-dev: 2.0.0_ibquylnxbcuxjcv5goqxixeso4
   tsc-alias: 1.8.2
   tsup: 6.5.0_z6wznmtyb6ovnulj6iujpct7um
-  typescript-cp: 0.1.6_typescript@4.9.4
+  typescript-cp: 0.1.7_typescript@4.9.4
 
 packages:
 
@@ -8805,8 +8805,8 @@ packages:
       media-typer: 0.3.0
       mime-types: 2.1.35
 
-  /typescript-cp/0.1.6_typescript@4.9.4:
-    resolution: {integrity: sha512-LtBhQAd6QPNOTXCiYKFkrOMQPoKoyWL0QIPti4OE0HhS2Yq851qEh1tL2IJamD9QSuUz5MAg4K9w5p8l/98wZg==}
+  /typescript-cp/0.1.7_typescript@4.9.4:
+    resolution: {integrity: sha512-au5zEQ88g6O7c1WJJiUFt7eHg8DkLBlhOhWae+iWS42W8NClzlC8UzNtJ//ZKxH500vjYUnTC3BLgPCKOn9V6Q==}
     hasBin: true
     peerDependencies:
       typescript: ^4.2.3
