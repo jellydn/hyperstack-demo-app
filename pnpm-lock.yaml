@@ -13,7 +13,7 @@ specifiers:
   jest-extended: 3.2.0
   lodash: 4.17.21
   mkdirp: 1.0.4
-  node-dev: 7.4.3
+  node-dev: 8.0.0
   node-notifier: 10.0.1
   rimraf: 3.0.2
   sqlite3: 5.1.4
@@ -49,7 +49,7 @@ devDependencies:
   jest: 29.3.1_2gaef37qp334zpvo5tg6pvsa2a
   jest-extended: 3.2.0_jest@29.3.1
   mkdirp: 1.0.4
-  node-dev: 7.4.3
+  node-dev: 8.0.0
   node-notifier: 10.0.1
   rimraf: 3.0.2
   stylomatic: 0.5.1_typescript@4.9.4
@@ -6659,9 +6659,9 @@ packages:
   /node-addon-api/4.3.0:
     resolution: {integrity: sha512-73sE9+3UaLYYFmDsFZnqCInzPyh3MqIwZO9cw58yIqAZhONrrabrYyYe3TuIqtIiOuTXVhsGau8hcrhhwSsDIQ==}
 
-  /node-dev/7.4.3:
-    resolution: {integrity: sha512-o8aYipN28xY+WEunMHHiNc3hpPSkGG8ulHyYBapNbkg4dQxohmhx6jiRbiFhTF6zy+5IwljUGv1EcuxsaWI4Bw==}
-    engines: {node: '>=12'}
+  /node-dev/8.0.0:
+    resolution: {integrity: sha512-GXc0KxmBXfQxMPdymOui40yvC5W/RXFwmuUDT65wvTAO/o9wAsddYC8q4EHKxq3Qqt+uLS/g7XKdgVcsjyk9lw==}
+    engines: {node: '>=14'}
     hasBin: true
     dependencies:
       dateformat: 3.0.3
