@@ -19,7 +19,7 @@ specifiers:
   sqlite3: 5.1.4
   stylomatic: 0.5.1
   time-require: 0.1.2
-  ts-jest: 29.0.3
+  ts-jest: 29.0.4
   ts-node: 10.9.1
   ts-node-dev: 2.0.0
   tsc-alias: 1.8.2
@@ -54,7 +54,7 @@ devDependencies:
   rimraf: 3.0.2
   stylomatic: 0.5.1_typescript@4.9.4
   time-require: 0.1.2
-  ts-jest: 29.0.3_p6ekqnroyms5nhqbfxosryz7rm
+  ts-jest: 29.0.4_p6ekqnroyms5nhqbfxosryz7rm
   ts-node-dev: 2.0.0_675sgqzckodi5qfmph65zv45ia
   tsc-alias: 1.8.2
   tsup: 6.5.0_z6wznmtyb6ovnulj6iujpct7um
@@ -8633,8 +8633,8 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
 
-  /ts-jest/29.0.3_p6ekqnroyms5nhqbfxosryz7rm:
-    resolution: {integrity: sha512-Ibygvmuyq1qp/z3yTh9QTwVVAbFdDy/+4BtIQR2sp6baF2SJU/8CKK/hhnGIDY2L90Az2jIqTwZPnN2p+BweiQ==}
+  /ts-jest/29.0.4_p6ekqnroyms5nhqbfxosryz7rm:
+    resolution: {integrity: sha512-YdNofkoyzeinwjIqLSYQeAM+GTmFQ7xFNtWcR5OyitY5VLzzNINrNmfhP5H3daA/V+RGQR7O3g1K6ysRgu5xIQ==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     hasBin: true
     peerDependencies:
