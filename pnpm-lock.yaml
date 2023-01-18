@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@hyperstackjs/initializer-jwt': 1.0.29
   '@hyperstackjs/testing': 1.0.29
-  '@types/jest': 29.2.5
+  '@types/jest': 29.2.6
   '@types/lodash': 4.14.191
   '@types/node': 18.11.18
   '@types/validator': 13.7.10
@@ -41,7 +41,7 @@ dependencies:
 
 devDependencies:
   '@hyperstackjs/testing': 1.0.29_e3cn3mcsiltgpvx5agffl4k3eq
-  '@types/jest': 29.2.5
+  '@types/jest': 29.2.6
   '@types/lodash': 4.14.191
   '@types/node': 18.11.18
   '@types/validator': 13.7.10
@@ -1508,8 +1508,8 @@ packages:
       '@types/istanbul-lib-report': 3.0.0
     dev: true
 
-  /@types/jest/29.2.5:
-    resolution: {integrity: sha512-H2cSxkKgVmqNHXP7TC2L/WUorrZu8ZigyRywfVzv6EyBlxj39n4C00hjXYQWsbwqgElaj/CiAeSRmk5GoaKTgw==}
+  /@types/jest/29.2.6:
+    resolution: {integrity: sha512-XEUC/Tgw3uMh6Ho8GkUtQ2lPhY5Fmgyp3TdlkTJs1W9VgNxs+Ow/x3Elh8lHQKqCbZL0AubQuqWjHVT033Hhrw==}
     dependencies:
       expect: 29.3.1
       pretty-format: 29.3.1
