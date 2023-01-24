@@ -15,7 +15,7 @@ specifiers:
   mkdirp: 1.0.4
   node-dev: 7.4.3
   node-notifier: 10.0.1
-  rimraf: 3.0.2
+  rimraf: 4.1.2
   sqlite3: 5.1.4
   stylomatic: 0.5.1
   time-require: 0.1.2
@@ -51,7 +51,7 @@ devDependencies:
   mkdirp: 1.0.4
   node-dev: 7.4.3
   node-notifier: 10.0.1
-  rimraf: 3.0.2
+  rimraf: 4.1.2
   stylomatic: 0.5.1_typescript@4.9.4
   time-require: 0.1.2
   ts-jest: 29.0.5_p6ekqnroyms5nhqbfxosryz7rm
@@ -7870,6 +7870,12 @@ packages:
     hasBin: true
     dependencies:
       glob: 7.2.3
+
+  /rimraf/4.1.2:
+    resolution: {integrity: sha512-BlIbgFryTbw3Dz6hyoWFhKk+unCcHMSkZGrTFVAx2WmttdBSonsdtRlwiuTbDqTKr+UlXIUqJVS4QT5tUzGENQ==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
 
   /rollup/3.10.1:
     resolution: {integrity: sha512-3Er+yel3bZbZX1g2kjVM+FW+RUWDxbG87fcqFM5/9HbPCTpbVp6JOLn7jlxnNlbu7s/N/uDA4EV/91E2gWnxzw==}
