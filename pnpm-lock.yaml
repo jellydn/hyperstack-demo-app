@@ -12,7 +12,7 @@ specifiers:
   jest: 29.3.1
   jest-extended: 3.2.3
   lodash: 4.17.21
-  mkdirp: 1.0.4
+  mkdirp: 2.1.3
   node-dev: 7.4.3
   node-notifier: 10.0.1
   rimraf: 3.0.2
@@ -30,8 +30,8 @@ specifiers:
   zod: 3.20.2
 
 dependencies:
-  '@hyperstackjs/initializer-jwt': 1.0.29_w4cekxj5rnya7ptovto3bw4qj4
-  hyperstack: 1.0.29_w4cekxj5rnya7ptovto3bw4qj4
+  '@hyperstackjs/initializer-jwt': 1.0.29_3cwpg2v3dm22pisp5ns2hm7pxa
+  hyperstack: 1.0.29_3cwpg2v3dm22pisp5ns2hm7pxa
   lodash: 4.17.21
   sqlite3: 5.1.4
   ts-node: 10.9.1_awa2wsr5thmg3i7jqycphctjfq
@@ -40,7 +40,7 @@ dependencies:
   zod: 3.20.2
 
 devDependencies:
-  '@hyperstackjs/testing': 1.0.29_w4cekxj5rnya7ptovto3bw4qj4
+  '@hyperstackjs/testing': 1.0.29_3cwpg2v3dm22pisp5ns2hm7pxa
   '@types/jest': 29.2.6
   '@types/lodash': 4.14.191
   '@types/node': 18.11.18
@@ -48,7 +48,7 @@ devDependencies:
   concurrently: 7.6.0
   jest: 29.3.1_2gaef37qp334zpvo5tg6pvsa2a
   jest-extended: 3.2.3_jest@29.3.1
-  mkdirp: 1.0.4
+  mkdirp: 2.1.3
   node-dev: 7.4.3
   node-notifier: 10.0.1
   rimraf: 3.0.2
@@ -608,7 +608,7 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@hyperstackjs/hypercontroller/1.0.29_mkdirp@1.0.4:
+  /@hyperstackjs/hypercontroller/1.0.29_mkdirp@2.1.3:
     resolution: {integrity: sha512-cGM26rHA0VJaWfqJhGHrW90doGT53VMMPXdItXnHoo8o9jRQq/EmKNqwstGBaaaX2TBc+b0mZ0mXaB9WFQ/NFA==}
     dependencies:
       '@anatine/zod-openapi': 1.12.0_fevkddsyjevl245xkjzks7onpa
@@ -626,7 +626,7 @@ packages:
       helmet: 5.1.1
       jsonwebtoken: 8.5.1
       lodash: 4.17.21
-      openapi-snippet: github.com/jondot/openapi-snippet/78b7f5b115d4bfb99f10f21d9a3b0d19c54fc6e4_mkdirp@1.0.4
+      openapi-snippet: github.com/jondot/openapi-snippet/78b7f5b115d4bfb99f10f21d9a3b0d19c54fc6e4_mkdirp@2.1.3
       openapi3-ts: 2.0.2
       path-to-regexp: 6.2.1
       permit: 0.2.4
@@ -746,13 +746,13 @@ packages:
       - walrus
       - whiskers
 
-  /@hyperstackjs/initializer-jwt/1.0.29_w4cekxj5rnya7ptovto3bw4qj4:
+  /@hyperstackjs/initializer-jwt/1.0.29_3cwpg2v3dm22pisp5ns2hm7pxa:
     resolution: {integrity: sha512-om57fqSunjGUk4YNU5YaiPmpFrD79Ao96ayM6vBVEU8Yw83maAdoR8uOZiaTdis7IAn7kCpvdYj2qnsyrSDyvw==}
     dependencies:
-      '@hyperstackjs/hypercontroller': 1.0.29_mkdirp@1.0.4
+      '@hyperstackjs/hypercontroller': 1.0.29_mkdirp@2.1.3
       '@hyperstackjs/typings': 1.0.29
       debug: 4.3.4
-      hyperstack: 1.0.29_w4cekxj5rnya7ptovto3bw4qj4
+      hyperstack: 1.0.29_3cwpg2v3dm22pisp5ns2hm7pxa
     transitivePeerDependencies:
       - '@types/node'
       - '@types/validator'
@@ -821,11 +821,11 @@ packages:
       - whiskers
     dev: false
 
-  /@hyperstackjs/testing/1.0.29_w4cekxj5rnya7ptovto3bw4qj4:
+  /@hyperstackjs/testing/1.0.29_3cwpg2v3dm22pisp5ns2hm7pxa:
     resolution: {integrity: sha512-BQQspRO9FhtiyncTuUhBwjD+c0e/1DdAtoJE4jXtaWHOYlLECAcwbsphgaGfjZmD+TyapaUNvo0ZA7vxa1egVg==}
     dependencies:
       debug: 4.3.4
-      hyperstack: 1.0.29_w4cekxj5rnya7ptovto3bw4qj4
+      hyperstack: 1.0.29_3cwpg2v3dm22pisp5ns2hm7pxa
       lodash: 4.17.21
       supertest: 6.3.3
       testcontainers: 8.16.0
@@ -4667,11 +4667,11 @@ packages:
     dependencies:
       graceful-fs: 4.2.10
 
-  /fs-writefile-promise/1.0.3_mkdirp@1.0.4:
+  /fs-writefile-promise/1.0.3_mkdirp@2.1.3:
     resolution: {integrity: sha512-yI+wDwj0FsgX7tyIQJR+EP60R64evMSixtGb9AzGWjJVKlF5tCet95KomfqGBg/aIAG1Dhd6wjCOQe5HbX/qLA==}
     engines: {node: '>=0.10'}
     dependencies:
-      mkdirp-promise: 1.1.0_mkdirp@1.0.4
+      mkdirp-promise: 1.1.0_mkdirp@2.1.3
       pinkie-promise: 1.0.0
     transitivePeerDependencies:
       - mkdirp
@@ -5079,7 +5079,7 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /httpsnippet/2.0.0_mkdirp@1.0.4:
+  /httpsnippet/2.0.0_mkdirp@2.1.3:
     resolution: {integrity: sha512-Hb2ttfB5OhasYxwChZ8QKpYX3v4plNvwMaMulUIC7M3RHRDf1Op6EMp47LfaU2sgQgfvo5spWK4xRAirMEisrg==}
     engines: {node: '>=10'}
     hasBin: true
@@ -5090,7 +5090,7 @@ packages:
       event-stream: 3.3.4
       form-data: 3.0.0
       fs-readfile-promise: 2.0.1
-      fs-writefile-promise: 1.0.3_mkdirp@1.0.4
+      fs-writefile-promise: 1.0.3_mkdirp@2.1.3
       har-validator: 5.1.5
       stringify-object: 3.3.0
     transitivePeerDependencies:
@@ -5128,12 +5128,12 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /hyperstack/1.0.29_w4cekxj5rnya7ptovto3bw4qj4:
+  /hyperstack/1.0.29_3cwpg2v3dm22pisp5ns2hm7pxa:
     resolution: {integrity: sha512-b60vFVQXQb/NNSsXhEYIxIzPve4EpWHu6RYLNsXOcxBEias3WTbikLLHWYJxsVpD8FBEZQcDY1z03Spg/E2Ikg==}
     dependencies:
       '@faker-js/faker': 7.6.0
       '@hyperstackjs/gen': 1.0.29
-      '@hyperstackjs/hypercontroller': 1.0.29_mkdirp@1.0.4
+      '@hyperstackjs/hypercontroller': 1.0.29_mkdirp@2.1.3
       '@hyperstackjs/hypermodel': 1.0.29_24oh3enmmglu6mlvknrbqxb4bm
       '@hyperstackjs/hyperportal': 1.0.29
       '@hyperstackjs/hyperworker': 1.0.29
@@ -6660,17 +6660,22 @@ packages:
     resolution: {integrity: sha512-gKLcREMhtuZRwRAfqP3RFW+TK4JqApVBtOIftVgjuABpAtpxhPGaDcfvbhNvD0B8iD1oUr/txX35NjcaY6Ns/A==}
     dev: true
 
-  /mkdirp-promise/1.1.0_mkdirp@1.0.4:
+  /mkdirp-promise/1.1.0_mkdirp@2.1.3:
     resolution: {integrity: sha512-xzB0UZFcW1UGS2xkXeDh39jzTP282lb3Vwp4QzCQYmkTn4ysaV5dBdbkOXmhkcE1TQlZebQlgTceaWvDr3oFgw==}
     engines: {node: '>=4'}
     deprecated: This package is broken and no longer maintained. 'mkdirp' itself supports promises now, please switch to that.
     peerDependencies:
       mkdirp: '>=0.5.0'
     dependencies:
-      mkdirp: 1.0.4
+      mkdirp: 2.1.3
 
   /mkdirp/1.0.4:
     resolution: {integrity: sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==}
+    engines: {node: '>=10'}
+    hasBin: true
+
+  /mkdirp/2.1.3:
+    resolution: {integrity: sha512-sjAkg21peAG9HS+Dkx7hlG9Ztx7HLeKnvB3NQRcu/mltCVmvkF0pisbiTSfDVYTT86XEfZrTUosLdZLStquZUw==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -9376,13 +9381,13 @@ packages:
   /zod/3.20.2:
     resolution: {integrity: sha512-1MzNQdAvO+54H+EaK5YpyEy0T+Ejo/7YLHS93G3RnYWh5gaotGHwGeN/ZO687qEDU2y4CdStQYXVHIgrUl5UVQ==}
 
-  github.com/jondot/openapi-snippet/78b7f5b115d4bfb99f10f21d9a3b0d19c54fc6e4_mkdirp@1.0.4:
+  github.com/jondot/openapi-snippet/78b7f5b115d4bfb99f10f21d9a3b0d19c54fc6e4_mkdirp@2.1.3:
     resolution: {tarball: https://codeload.github.com/jondot/openapi-snippet/tar.gz/78b7f5b115d4bfb99f10f21d9a3b0d19c54fc6e4}
     id: github.com/jondot/openapi-snippet/78b7f5b115d4bfb99f10f21d9a3b0d19c54fc6e4
     name: openapi-snippet
     version: 0.13.0
     dependencies:
-      httpsnippet: 2.0.0_mkdirp@1.0.4
+      httpsnippet: 2.0.0_mkdirp@2.1.3
       openapi-sampler: 1.3.1
     transitivePeerDependencies:
       - mkdirp
