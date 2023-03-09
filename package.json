@@ -32,7 +32,7 @@
     "mkdirp": "2.1.5",
     "node-dev": "7.4.3",
     "node-notifier": "10.0.1",
-    "rimraf": "4.3.1",
+    "rimraf": "4.4.0",
     "stylomatic": "0.5.1",
     "time-require": "0.1.2",
     "ts-jest": "29.0.5",
