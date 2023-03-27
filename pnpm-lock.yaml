@@ -4,7 +4,7 @@ specifiers:
   '@hyperstackjs/initializer-jwt': 1.0.30
   '@hyperstackjs/testing': 1.0.30
   '@types/jest': 29.5.0
-  '@types/lodash': 4.14.191
+  '@types/lodash': 4.14.192
   '@types/node': 18.15.10
   '@types/validator': 13.7.14
   concurrently: 7.6.0
@@ -42,7 +42,7 @@ dependencies:
 devDependencies:
   '@hyperstackjs/testing': 1.0.30_k73oemlzwpoi266mjowadk4qgy
   '@types/jest': 29.5.0
-  '@types/lodash': 4.14.191
+  '@types/lodash': 4.14.192
   '@types/node': 18.15.10
   '@types/validator': 13.7.14
   concurrently: 7.6.0
@@ -1719,8 +1719,8 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
-  /@types/lodash/4.14.191:
-    resolution: {integrity: sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==}
+  /@types/lodash/4.14.192:
+    resolution: {integrity: sha512-km+Vyn3BYm5ytMO13k9KTp27O75rbQ0NFw+U//g+PX7VZyjCioXaRFisqSIJRECljcTv73G3i6BpglNGHgUQ5A==}
     dev: true
 
   /@types/mdast/3.0.11:
