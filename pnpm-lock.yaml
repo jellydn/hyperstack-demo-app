@@ -3,16 +3,16 @@ lockfileVersion: '6.0'
 dependencies:
   '@hyperstackjs/initializer-jwt':
     specifier: 1.0.30
-    version: 1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.15.11)(@types/validator@13.7.14)(mkdirp@2.1.6)(sqlite3@5.1.4)(underscore@1.13.6)
+    version: 1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.15.11)(@types/validator@13.7.14)(mkdirp@2.1.6)(sqlite3@5.1.5)(underscore@1.13.6)
   hyperstack:
     specifier: 1.0.30
-    version: 1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.15.11)(@types/validator@13.7.14)(mkdirp@2.1.6)(sqlite3@5.1.4)(underscore@1.13.6)
+    version: 1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.15.11)(@types/validator@13.7.14)(mkdirp@2.1.6)(sqlite3@5.1.5)(underscore@1.13.6)
   lodash:
     specifier: 4.17.21
     version: 4.17.21
   sqlite3:
-    specifier: 5.1.4
-    version: 5.1.4
+    specifier: 5.1.5
+    version: 5.1.5
   ts-node:
     specifier: 10.9.1
     version: 10.9.1(@types/node@18.15.11)(typescript@4.9.5)
@@ -29,7 +29,7 @@ dependencies:
 devDependencies:
   '@hyperstackjs/testing':
     specifier: 1.0.30
-    version: 1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.15.11)(@types/validator@13.7.14)(mkdirp@2.1.6)(sqlite3@5.1.4)(underscore@1.13.6)
+    version: 1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.15.11)(@types/validator@13.7.14)(mkdirp@2.1.6)(sqlite3@5.1.5)(underscore@1.13.6)
   '@types/jest':
     specifier: 29.5.0
     version: 29.5.0
@@ -864,14 +864,14 @@ packages:
       - mkdirp
       - supports-color
 
-  /@hyperstackjs/hypermodel@1.0.30(@types/node@18.15.11)(@types/validator@13.7.14)(sqlite3@5.1.4):
+  /@hyperstackjs/hypermodel@1.0.30(@types/node@18.15.11)(@types/validator@13.7.14)(sqlite3@5.1.5):
     resolution: {integrity: sha512-cSlzaagxsjYCNK9M8n95zs2s/IwnJsT3fx2AXW3VMpS7UNkPyEXw/0ZGFOhHF1dJ+G000Zri/LfqnwDmQPFznw==}
     dependencies:
       debug: 4.3.4
       glob: 8.1.0
       lodash: 4.17.21
       reflect-metadata: 0.1.13
-      sequelize: 6.30.0(sqlite3@5.1.4)
+      sequelize: 6.30.0(sqlite3@5.1.5)
       sequelize-typescript: 2.1.5(@types/node@18.15.11)(@types/validator@13.7.14)(reflect-metadata@0.1.13)(sequelize@6.30.0)
       umzug: 3.2.1
     transitivePeerDependencies:
@@ -973,13 +973,13 @@ packages:
       - walrus
       - whiskers
 
-  /@hyperstackjs/initializer-jwt@1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.15.11)(@types/validator@13.7.14)(mkdirp@2.1.6)(sqlite3@5.1.4)(underscore@1.13.6):
+  /@hyperstackjs/initializer-jwt@1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.15.11)(@types/validator@13.7.14)(mkdirp@2.1.6)(sqlite3@5.1.5)(underscore@1.13.6):
     resolution: {integrity: sha512-RUIDLyMOQl5W4TsboJdO+dhIcBWsCC7oymAEtkCJ11z5LzXBcruu94k02Z9LhwYRPKQgVZlALbqGo9rblnyy/Q==}
     dependencies:
       '@hyperstackjs/hypercontroller': 1.0.30(mkdirp@2.1.6)
       '@hyperstackjs/typings': 1.0.30
       debug: 4.3.4
-      hyperstack: 1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.15.11)(@types/validator@13.7.14)(mkdirp@2.1.6)(sqlite3@5.1.4)(underscore@1.13.6)
+      hyperstack: 1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.15.11)(@types/validator@13.7.14)(mkdirp@2.1.6)(sqlite3@5.1.5)(underscore@1.13.6)
     transitivePeerDependencies:
       - '@types/ioredis-mock'
       - '@types/node'
@@ -1049,11 +1049,11 @@ packages:
       - whiskers
     dev: false
 
-  /@hyperstackjs/testing@1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.15.11)(@types/validator@13.7.14)(mkdirp@2.1.6)(sqlite3@5.1.4)(underscore@1.13.6):
+  /@hyperstackjs/testing@1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.15.11)(@types/validator@13.7.14)(mkdirp@2.1.6)(sqlite3@5.1.5)(underscore@1.13.6):
     resolution: {integrity: sha512-Mdp3RV3fz5aPXUbj5MFBXYc/GClOB0bXBJH4eeeTRgtU9YSoo5/466joEFDhvRuVCqHmeKog+iBZ5T6Y/1ys2Q==}
     dependencies:
       debug: 4.3.4
-      hyperstack: 1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.15.11)(@types/validator@13.7.14)(mkdirp@2.1.6)(sqlite3@5.1.4)(underscore@1.13.6)
+      hyperstack: 1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.15.11)(@types/validator@13.7.14)(mkdirp@2.1.6)(sqlite3@5.1.5)(underscore@1.13.6)
       lodash: 4.17.21
       supertest: 6.3.3
       testcontainers: 8.16.0
@@ -5190,13 +5190,13 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /hyperstack@1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.15.11)(@types/validator@13.7.14)(mkdirp@2.1.6)(sqlite3@5.1.4)(underscore@1.13.6):
+  /hyperstack@1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.15.11)(@types/validator@13.7.14)(mkdirp@2.1.6)(sqlite3@5.1.5)(underscore@1.13.6):
     resolution: {integrity: sha512-V3PxUCEwy2++TEM6fMUrBztI1AZqsWfPmataigaeIjK8pGDzrgBnssA5EStEOQf3RLOi8RMS63TYmEwqGUraFA==}
     dependencies:
       '@faker-js/faker': 7.6.0
       '@hyperstackjs/gen': 1.0.30
       '@hyperstackjs/hypercontroller': 1.0.30(mkdirp@2.1.6)
-      '@hyperstackjs/hypermodel': 1.0.30(@types/node@18.15.11)(@types/validator@13.7.14)(sqlite3@5.1.4)
+      '@hyperstackjs/hypermodel': 1.0.30(@types/node@18.15.11)(@types/validator@13.7.14)(sqlite3@5.1.5)
       '@hyperstackjs/hyperportal': 1.0.30
       '@hyperstackjs/hyperworker': 1.0.30(@types/ioredis-mock@8.2.1)(underscore@1.13.6)
       as-table: 1.0.55
@@ -8140,9 +8140,9 @@ packages:
       '@types/validator': 13.7.14
       glob: 7.2.0
       reflect-metadata: 0.1.13
-      sequelize: 6.30.0(sqlite3@5.1.4)
+      sequelize: 6.30.0(sqlite3@5.1.5)
 
-  /sequelize@6.30.0(sqlite3@5.1.4):
+  /sequelize@6.30.0(sqlite3@5.1.5):
     resolution: {integrity: sha512-VxQ3gB+isefL8Ic3GDUR6Y8Zwu1ctWNUlffcdSClsLkQ0mwgoLQv3cI3cDwSVn9wZJk0AEwMSm1TYFFRqmcR0A==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
@@ -8187,7 +8187,7 @@ packages:
       retry-as-promised: 7.0.4
       semver: 7.3.8
       sequelize-pool: 7.1.0
-      sqlite3: 5.1.4
+      sqlite3: 5.1.5
       toposort-class: 1.0.1
       uuid: 8.3.2
       validator: 13.9.0
@@ -8372,8 +8372,8 @@ packages:
   /sprintf-js@1.1.2:
     resolution: {integrity: sha512-VE0SOVEHCk7Qc8ulkWw3ntAzXuqf7S2lvwQaDLRnUeIEaKNQJzV6BwmLKhOqT61aGhfUMrXeaBk+oDGCzvhcug==}
 
-  /sqlite3@5.1.4:
-    resolution: {integrity: sha512-i0UlWAzPlzX3B5XP2cYuhWQJsTtlMD6obOa1PgeEQ4DHEXUuyJkgv50I3isqZAP5oFc2T8OFvakmDh2W6I+YpA==}
+  /sqlite3@5.1.5:
+    resolution: {integrity: sha512-7sP16i4wI+yKnGOO2q2ijze7EjQ9US+Vw7DYYwxfFtqNZDGgBcEw0oeDaDvUTq66uJOzVd/z6MkIg+c9erSJKg==}
     requiresBuild: true
     peerDependenciesMeta:
       node-gyp:

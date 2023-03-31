@@ -14,7 +14,7 @@
     "@hyperstackjs/initializer-jwt": "1.0.30",
     "hyperstack": "1.0.30",
     "lodash": "4.17.21",
-    "sqlite3": "5.1.4",
+    "sqlite3": "5.1.5",
     "ts-node": "10.9.1",
     "tsconfig-paths": "4.2.0",
     "typescript": "4.9.5",
