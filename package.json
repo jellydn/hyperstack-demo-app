@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@hyperstackjs/testing": "1.0.30",
-    "@types/jest": "29.5.0",
+    "@types/jest": "29.5.1",
     "@types/lodash": "4.14.194",
     "@types/node": "18.15.11",
     "@types/validator": "13.7.15",
@@ -33,7 +33,7 @@
     "node-dev": "8.0.0",
     "node-notifier": "10.0.1",
     "rimraf": "5.0.0",
-    "stylomatic": "0.5.1",
+    "stylomatic": "0.6.0",
     "time-require": "0.1.2",
     "ts-jest": "29.1.0",
     "ts-node-dev": "2.0.0",
