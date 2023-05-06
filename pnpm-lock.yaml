@@ -3,10 +3,10 @@ lockfileVersion: '6.0'
 dependencies:
   '@hyperstackjs/initializer-jwt':
     specifier: 1.0.30
-    version: 1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.15)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6)
+    version: 1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.16)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6)
   hyperstack:
     specifier: 1.0.30
-    version: 1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.15)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6)
+    version: 1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.16)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6)
   lodash:
     specifier: 4.17.21
     version: 4.17.21
@@ -29,7 +29,7 @@ dependencies:
 devDependencies:
   '@hyperstackjs/testing':
     specifier: 1.0.30
-    version: 1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.15)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6)
+    version: 1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.16)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6)
   '@types/jest':
     specifier: 29.5.1
     version: 29.5.1
@@ -40,8 +40,8 @@ devDependencies:
     specifier: 18.16.5
     version: 18.16.5
   '@types/validator':
-    specifier: 13.7.15
-    version: 13.7.15
+    specifier: 13.7.16
+    version: 13.7.16
   concurrently:
     specifier: 8.0.1
     version: 8.0.1
@@ -881,7 +881,7 @@ packages:
       - mkdirp
       - supports-color
 
-  /@hyperstackjs/hypermodel@1.0.30(@types/node@18.16.5)(@types/validator@13.7.15)(sqlite3@5.1.6):
+  /@hyperstackjs/hypermodel@1.0.30(@types/node@18.16.5)(@types/validator@13.7.16)(sqlite3@5.1.6):
     resolution: {integrity: sha512-cSlzaagxsjYCNK9M8n95zs2s/IwnJsT3fx2AXW3VMpS7UNkPyEXw/0ZGFOhHF1dJ+G000Zri/LfqnwDmQPFznw==}
     dependencies:
       debug: 4.3.4
@@ -889,7 +889,7 @@ packages:
       lodash: 4.17.21
       reflect-metadata: 0.1.13
       sequelize: 6.31.0(sqlite3@5.1.6)
-      sequelize-typescript: 2.1.5(@types/node@18.16.5)(@types/validator@13.7.15)(reflect-metadata@0.1.13)(sequelize@6.31.0)
+      sequelize-typescript: 2.1.5(@types/node@18.16.5)(@types/validator@13.7.16)(reflect-metadata@0.1.13)(sequelize@6.31.0)
       umzug: 3.2.1
     transitivePeerDependencies:
       - '@types/node'
@@ -990,13 +990,13 @@ packages:
       - walrus
       - whiskers
 
-  /@hyperstackjs/initializer-jwt@1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.15)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6):
+  /@hyperstackjs/initializer-jwt@1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.16)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6):
     resolution: {integrity: sha512-RUIDLyMOQl5W4TsboJdO+dhIcBWsCC7oymAEtkCJ11z5LzXBcruu94k02Z9LhwYRPKQgVZlALbqGo9rblnyy/Q==}
     dependencies:
       '@hyperstackjs/hypercontroller': 1.0.30(mkdirp@3.0.1)
       '@hyperstackjs/typings': 1.0.30
       debug: 4.3.4
-      hyperstack: 1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.15)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6)
+      hyperstack: 1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.16)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6)
     transitivePeerDependencies:
       - '@types/ioredis-mock'
       - '@types/node'
@@ -1066,11 +1066,11 @@ packages:
       - whiskers
     dev: false
 
-  /@hyperstackjs/testing@1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.15)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6):
+  /@hyperstackjs/testing@1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.16)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6):
     resolution: {integrity: sha512-Mdp3RV3fz5aPXUbj5MFBXYc/GClOB0bXBJH4eeeTRgtU9YSoo5/466joEFDhvRuVCqHmeKog+iBZ5T6Y/1ys2Q==}
     dependencies:
       debug: 4.3.4
-      hyperstack: 1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.15)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6)
+      hyperstack: 1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.16)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6)
       lodash: 4.17.21
       supertest: 6.3.3
       testcontainers: 8.16.0
@@ -1905,8 +1905,8 @@ packages:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}
     dev: true
 
-  /@types/validator@13.7.15:
-    resolution: {integrity: sha512-yeinDVQunb03AEP8luErFcyf/7Lf7AzKCD0NXfgVoGCCQDNpZET8Jgq74oBgqKld3hafLbfzt/3inUdQvaFeXQ==}
+  /@types/validator@13.7.16:
+    resolution: {integrity: sha512-VyKmLktUHYLbrSbsRi241MSUlGYomQgK/tfCNpej3Gt5qDOM10AZ3nU2aR2s5JritClXuOBu4K7MkywVW/Y6Ow==}
 
   /@types/yargs-parser@21.0.0:
     resolution: {integrity: sha512-iO9ZQHkZxHn4mSakYV0vFHAVDyEOIJQrV2uZ06HxEPcx+mt8swXoZHIbaaJ2crJYFfErySgktuTZ3BeLz+XmFA==}
@@ -5339,13 +5339,13 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /hyperstack@1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.15)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6):
+  /hyperstack@1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.16)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6):
     resolution: {integrity: sha512-V3PxUCEwy2++TEM6fMUrBztI1AZqsWfPmataigaeIjK8pGDzrgBnssA5EStEOQf3RLOi8RMS63TYmEwqGUraFA==}
     dependencies:
       '@faker-js/faker': 7.6.0
       '@hyperstackjs/gen': 1.0.30
       '@hyperstackjs/hypercontroller': 1.0.30(mkdirp@3.0.1)
-      '@hyperstackjs/hypermodel': 1.0.30(@types/node@18.16.5)(@types/validator@13.7.15)(sqlite3@5.1.6)
+      '@hyperstackjs/hypermodel': 1.0.30(@types/node@18.16.5)(@types/validator@13.7.16)(sqlite3@5.1.6)
       '@hyperstackjs/hyperportal': 1.0.30
       '@hyperstackjs/hyperworker': 1.0.30(@types/ioredis-mock@8.2.1)(underscore@1.13.6)
       as-table: 1.0.55
@@ -8400,7 +8400,7 @@ packages:
     resolution: {integrity: sha512-G9c0qlIWQSK29pR/5U2JF5dDQeqqHRragoyahj/Nx4KOOQ3CPPfzxnfqFPCSB7x5UgjOgnZ61nSxz+fjDpRlJg==}
     engines: {node: '>= 10.0.0'}
 
-  /sequelize-typescript@2.1.5(@types/node@18.16.5)(@types/validator@13.7.15)(reflect-metadata@0.1.13)(sequelize@6.31.0):
+  /sequelize-typescript@2.1.5(@types/node@18.16.5)(@types/validator@13.7.16)(reflect-metadata@0.1.13)(sequelize@6.31.0):
     resolution: {integrity: sha512-x1CNODct8gJyfZPwEZBU5uVGNwgJI2Fda913ZxD5ZtCSRyTDPBTS/0uXciF+MlCpyqjpmoCAPtudQWzw579bzA==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
@@ -8410,7 +8410,7 @@ packages:
       sequelize: '>=6.20.1'
     dependencies:
       '@types/node': 18.16.5
-      '@types/validator': 13.7.15
+      '@types/validator': 13.7.16
       glob: 7.2.0
       reflect-metadata: 0.1.13
       sequelize: 6.31.0(sqlite3@5.1.6)
@@ -8449,7 +8449,7 @@ packages:
         optional: true
     dependencies:
       '@types/debug': 4.1.7
-      '@types/validator': 13.7.15
+      '@types/validator': 13.7.16
       debug: 4.3.4
       dottie: 2.0.3
       inflection: 1.13.4
