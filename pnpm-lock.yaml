@@ -2,11 +2,11 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@hyperstackjs/initializer-jwt':
-    specifier: 1.0.30
-    version: 1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.16)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6)
+    specifier: 1.0.31
+    version: 1.0.31(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.16)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6)
   hyperstack:
-    specifier: 1.0.30
-    version: 1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.16)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6)
+    specifier: 1.0.31
+    version: 1.0.31(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.16)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6)
   lodash:
     specifier: 4.17.21
     version: 4.17.21
@@ -28,8 +28,8 @@ dependencies:
 
 devDependencies:
   '@hyperstackjs/testing':
-    specifier: 1.0.30
-    version: 1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.16)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6)
+    specifier: 1.0.31
+    version: 1.0.31(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.16)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6)
   '@types/jest':
     specifier: 29.5.1
     version: 29.5.1
@@ -840,8 +840,8 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@hyperstackjs/gen@1.0.30:
-    resolution: {integrity: sha512-oUEK7BK5lUvL6Sxjdf6q2vRRwx2FzViaaINqj0KUDjvPwYqbmw51Yvs9QcYRFp/1v/aYIIr38cTDmSie8qwKyw==}
+  /@hyperstackjs/gen@1.0.31:
+    resolution: {integrity: sha512-6WPbvK+Nus+mkv17IoMwgu+uEDE6bI+/beBMUOtAy2VuItDL1Bzncf23eea+gfzt0UF2Z8E6y/7B1Onhmg6Yzg==}
     dependencies:
       enquirer: 2.3.6
       execa: 5.1.1
@@ -851,11 +851,11 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@hyperstackjs/hypercontroller@1.0.30(mkdirp@3.0.1):
-    resolution: {integrity: sha512-A0H1onvvrAJ61dI44IkGNSxMkZyNBWJJJOe8OzLir9wOcm3VvW2KCAEDhBoioJaF1WZh47dOgfSMuAYyiCJE1Q==}
+  /@hyperstackjs/hypercontroller@1.0.31(mkdirp@3.0.1):
+    resolution: {integrity: sha512-BqEFC4ETxkoQmD+YfrUlvLXaDwX7xfm9rketcdNLYzFHYJCotx0fvGZ2p9p4zHEHjxz99t5RnDtboOotxUp2tw==}
     dependencies:
       '@anatine/zod-openapi': 1.12.1(openapi3-ts@2.0.2)(zod@3.21.4)
-      '@hyperstackjs/hypernight': 1.0.30
+      '@hyperstackjs/hypernight': 1.0.31
       ajv: 6.12.6
       async-express-mw: 0.1.2
       body-parser: 1.20.2
@@ -881,8 +881,8 @@ packages:
       - mkdirp
       - supports-color
 
-  /@hyperstackjs/hypermodel@1.0.30(@types/node@18.16.5)(@types/validator@13.7.16)(sqlite3@5.1.6):
-    resolution: {integrity: sha512-cSlzaagxsjYCNK9M8n95zs2s/IwnJsT3fx2AXW3VMpS7UNkPyEXw/0ZGFOhHF1dJ+G000Zri/LfqnwDmQPFznw==}
+  /@hyperstackjs/hypermodel@1.0.31(@types/node@18.16.5)(@types/validator@13.7.16)(sqlite3@5.1.6):
+    resolution: {integrity: sha512-C8/ZoO3zuXIhm/371B83ex1AiFngG9IzENgFoepYE8G6P6j4RC752L4PJgnBcjgNxqCGLylC91SymU9EKPF4Yw==}
     dependencies:
       debug: 4.3.4
       glob: 8.1.0
@@ -905,23 +905,23 @@ packages:
       - supports-color
       - tedious
 
-  /@hyperstackjs/hypernight@1.0.30:
-    resolution: {integrity: sha512-ISWUO1LHucbfOZ5V8hgAbVhPmdOQP4eDFOhbgpag02cS2UQemhhb0K1ztcO6KvveQj41pC0t59vH0+knaXj95Q==}
+  /@hyperstackjs/hypernight@1.0.31:
+    resolution: {integrity: sha512-ktGJ4+8aplecUCU1mWVfT5ry+2BYg57hMSzMJEeklnTubrWX6igXt1/thqLwIkbQOuimPq0zWhkHklr/BkLv/w==}
     dependencies:
       express: 4.18.2
       reflect-metadata: 0.1.13
     transitivePeerDependencies:
       - supports-color
 
-  /@hyperstackjs/hyperportal@1.0.30:
-    resolution: {integrity: sha512-y02T1xchM5J6GQI0hYZ5LLzbxME6zrvz16/5aJZfvq7Hxl773CPfXYN+Q0Mq1okLGc28se3o6QJ609sbBH7iww==}
+  /@hyperstackjs/hyperportal@1.0.31:
+    resolution: {integrity: sha512-A5KC/8BHdaReM82/k9SvskZOIC4jUkr03OtPdHscop+0PuZzUsa59F4GV846MMCrSthnrotrkIP+ZtJz2lm2fA==}
     dependencies:
       as-table: 1.0.55
       colorette: 2.0.20
       lodash: 4.17.21
 
-  /@hyperstackjs/hyperworker@1.0.30(@types/ioredis-mock@8.2.1)(underscore@1.13.6):
-    resolution: {integrity: sha512-NkOTgiNKPNeWeTuCuBrPgI/IMqvcNYv6glZKzKAsZg9hVjgCeunK6xIQA9yG9b7D8BIs5nm1A98EXJSZNiQoLA==}
+  /@hyperstackjs/hyperworker@1.0.31(@types/ioredis-mock@8.2.1)(underscore@1.13.6):
+    resolution: {integrity: sha512-+RPerk2d31mNNu3RQBPaj/1mYKQnt0k6+obhwNOI0tjQ6quhGYnLlAn1Kvbgkt9sxdK9VhPJqo5Q5n9QvyJQrg==}
     dependencies:
       bullmq: 1.91.1
       debug: 4.3.4
@@ -990,13 +990,13 @@ packages:
       - walrus
       - whiskers
 
-  /@hyperstackjs/initializer-jwt@1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.16)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6):
-    resolution: {integrity: sha512-RUIDLyMOQl5W4TsboJdO+dhIcBWsCC7oymAEtkCJ11z5LzXBcruu94k02Z9LhwYRPKQgVZlALbqGo9rblnyy/Q==}
+  /@hyperstackjs/initializer-jwt@1.0.31(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.16)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6):
+    resolution: {integrity: sha512-duWV2h6JL6d8+4sLeR+8N1uIFHdMXdapnu93mCdzVHqIjF7+A87W8vvT3kRTvrE3lrdyLzNSTAAljsSPCe+1jw==}
     dependencies:
-      '@hyperstackjs/hypercontroller': 1.0.30(mkdirp@3.0.1)
-      '@hyperstackjs/typings': 1.0.30
+      '@hyperstackjs/hypercontroller': 1.0.31(mkdirp@3.0.1)
+      '@hyperstackjs/typings': 1.0.31
       debug: 4.3.4
-      hyperstack: 1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.16)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6)
+      hyperstack: 1.0.31(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.16)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6)
     transitivePeerDependencies:
       - '@types/ioredis-mock'
       - '@types/node'
@@ -1066,11 +1066,11 @@ packages:
       - whiskers
     dev: false
 
-  /@hyperstackjs/testing@1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.16)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6):
-    resolution: {integrity: sha512-Mdp3RV3fz5aPXUbj5MFBXYc/GClOB0bXBJH4eeeTRgtU9YSoo5/466joEFDhvRuVCqHmeKog+iBZ5T6Y/1ys2Q==}
+  /@hyperstackjs/testing@1.0.31(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.16)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6):
+    resolution: {integrity: sha512-d5kOaHGL0mGBt1yJqkGp3bsHYH6hqSGSIcxmXslW0w4JFryLMJCHAVuAlpkfical1H3THd1GZYChoim/4Jz+4Q==}
     dependencies:
       debug: 4.3.4
-      hyperstack: 1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.16)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6)
+      hyperstack: 1.0.31(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.16)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6)
       lodash: 4.17.21
       supertest: 6.3.3
       testcontainers: 8.16.0
@@ -1143,8 +1143,8 @@ packages:
       - whiskers
     dev: true
 
-  /@hyperstackjs/typings@1.0.30:
-    resolution: {integrity: sha512-vI401q0MikwIEANoRt2jLN/BTURzJ5XDb7aBuQvi2eBqfvxH1U+332vyNWb3BVhX2i6Md2tMOIKyVqNI4uR0eg==}
+  /@hyperstackjs/typings@1.0.31:
+    resolution: {integrity: sha512-7JpL7plNgUp399htUUb7A1cgp1AipoRfTN/228E4WoBN6AUdayJCTM0Kg+oOAXaJYDLb7CRWWFHeY3XWQYNbzA==}
     dependencies:
       lodash: 4.17.21
     dev: false
@@ -5339,15 +5339,15 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /hyperstack@1.0.30(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.16)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6):
-    resolution: {integrity: sha512-V3PxUCEwy2++TEM6fMUrBztI1AZqsWfPmataigaeIjK8pGDzrgBnssA5EStEOQf3RLOi8RMS63TYmEwqGUraFA==}
+  /hyperstack@1.0.31(@types/ioredis-mock@8.2.1)(@types/node@18.16.5)(@types/validator@13.7.16)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6):
+    resolution: {integrity: sha512-ZISCI7n877XRH1YTe0SJhzeeDa/eNCWM20EPKwHrOxMZ/pltKmHUyi1+1bCS+13C0NJrhf3TFeqNjb5ZQpnjCA==}
     dependencies:
       '@faker-js/faker': 7.6.0
-      '@hyperstackjs/gen': 1.0.30
-      '@hyperstackjs/hypercontroller': 1.0.30(mkdirp@3.0.1)
-      '@hyperstackjs/hypermodel': 1.0.30(@types/node@18.16.5)(@types/validator@13.7.16)(sqlite3@5.1.6)
-      '@hyperstackjs/hyperportal': 1.0.30
-      '@hyperstackjs/hyperworker': 1.0.30(@types/ioredis-mock@8.2.1)(underscore@1.13.6)
+      '@hyperstackjs/gen': 1.0.31
+      '@hyperstackjs/hypercontroller': 1.0.31(mkdirp@3.0.1)
+      '@hyperstackjs/hypermodel': 1.0.31(@types/node@18.16.5)(@types/validator@13.7.16)(sqlite3@5.1.6)
+      '@hyperstackjs/hyperportal': 1.0.31
+      '@hyperstackjs/hyperworker': 1.0.31(@types/ioredis-mock@8.2.1)(underscore@1.13.6)
       as-table: 1.0.55
       colorette: 2.0.20
       debug: 4.3.4
