@@ -80,8 +80,8 @@ devDependencies:
     specifier: 2.0.0
     version: 2.0.0(@types/node@18.16.19)(node-notifier@10.0.1)(typescript@5.1.6)
   tsc-alias:
-    specifier: 1.8.6
-    version: 1.8.6
+    specifier: 1.8.7
+    version: 1.8.7
   tsup:
     specifier: 6.7.0
     version: 6.7.0(postcss@8.4.24)(ts-node@10.9.1)(typescript@5.1.6)
@@ -9377,8 +9377,8 @@ packages:
       v8-compile-cache-lib: 3.0.1
       yn: 3.1.1
 
-  /tsc-alias@1.8.6:
-    resolution: {integrity: sha512-vq+i6VpE83IeMsSJVcFN03ZBofADhr8/gIJXjxpbnTRfN/MFXy0+SBaKG2o7p95QqXBGkeG98HYz3IkOOveFbg==}
+  /tsc-alias@1.8.7:
+    resolution: {integrity: sha512-59Q/zUQa3miTf99mLbSqaW0hi1jt4WoG8Uhe5hSZJHQpSoFW9eEwvW7jlKMHXWvT+zrzy3SN9PE/YBhQ+WVydA==}
     hasBin: true
     dependencies:
       chokidar: 3.5.3
