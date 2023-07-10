@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@hyperstackjs/testing": "1.0.31",
-    "@types/jest": "29.5.2",
+    "@types/jest": "29.5.3",
     "@types/lodash": "4.14.195",
     "@types/node": "18.16.19",
     "@types/validator": "13.7.17",
