@@ -86,8 +86,8 @@ devDependencies:
     specifier: 6.7.0
     version: 6.7.0(postcss@8.4.26)(ts-node@10.9.1)(typescript@5.1.6)
   typescript-cp:
-    specifier: 0.1.8
-    version: 0.1.8(typescript@5.1.6)
+    specifier: 0.1.9
+    version: 0.1.9(typescript@5.1.6)
 
 packages:
 
@@ -9584,8 +9584,8 @@ packages:
       is-typed-array: 1.1.10
     dev: true
 
-  /typescript-cp@0.1.8(typescript@5.1.6):
-    resolution: {integrity: sha512-HH3tf0zrXZMmMuhHjo/YefBj3Hnn2LyqhyLfGeNWCiOo4gAw2ZmpkFVpbc/q13X1OUKvRepjWMh1Ye3QPPNLcA==}
+  /typescript-cp@0.1.9(typescript@5.1.6):
+    resolution: {integrity: sha512-RMPUMzQENR42R7vXc737M5kR4+BbJ/GnDpKyD4qK3Db/g3n+dyEhmly0sVyZehnFTsy/1EGlVpP0jrt9Jq+8uw==}
     hasBin: true
     peerDependencies:
       typescript: '>=4.2.3'
