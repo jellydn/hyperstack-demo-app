@@ -39,6 +39,6 @@
     "ts-node-dev": "2.0.0",
     "tsc-alias": "1.8.7",
     "tsup": "6.7.0",
-    "typescript-cp": "0.1.8"
+    "typescript-cp": "0.1.9"
   }
 }
