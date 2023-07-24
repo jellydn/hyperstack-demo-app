@@ -12,8 +12,8 @@ module.exports = {
         t.nonNullString('title'),
         t.string('content'),
         t.intFK('ownerId', 'Users', 'id'),
-        t.timestamps()
-      )
+        t.timestamps(),
+      ),
     )
   },
   down: async ({ query }) => {

@@ -1,6 +1,7 @@
 import { test } from '@hyperstackjs/testing'
 import { root } from '../../../config/settings'
 import { appContext } from '../../../app'
+
 const {
   requests,
   matchers: { matchRequestWithSnapshot, matchDeliveriesWithSnapshot },
@@ -19,7 +20,7 @@ const serializeVerifyEmails = redactAndExpectMatch(
     'originalMessage.html': verifyTokenExpr,
     'originalMessage.text': verifyTokenExpr,
   },
-  baseMailerSerialize
+  baseMailerSerialize,
 )
 
 const serializeUser = redactAndExpectMatch({
@@ -37,19 +38,19 @@ describe('requests', () => {
           password: 'mypass-should-login',
           name: 'Eddie Van Halen',
         }),
-        { serializer }
+        { serializer },
       )
       const user = await User.findOne({
         where: { username: 'evh@example.com' },
       })
-      if (!user) {
+      if (!user)
         throw new Error('user is null')
-      }
+
       expect(user.emailVerificationToken).toMatch(/.{3,}/)
       expect(user.emailVerificationSentAt).toBeTruthy()
 
       expect(
-        new Date().getTime() - user.emailVerificationSentAt!.getTime()
+        new Date().getTime() - user.emailVerificationSentAt!.getTime(),
       ).toBeWithin(0, 5000)
 
       expect(serializeUser(user)).toMatchSnapshot()
@@ -68,7 +69,7 @@ describe('requests', () => {
         request().post('/auth/register').send({
           username: 'no-such-user@example.com',
           password: 'mypass-should-login',
-        })
+        }),
       )
       await matchRequestWithSnapshot(
         400,
@@ -76,7 +77,7 @@ describe('requests', () => {
           username: 'this-is-not-email',
           password: 'mypass-should-login',
           name: 'Eddie Van Halen',
-        })
+        }),
       )
       // password too short
       await matchRequestWithSnapshot(
@@ -85,7 +86,7 @@ describe('requests', () => {
           username: 'evh@example.com',
           password: 'boo',
           name: 'Eddie Van Halen',
-        })
+        }),
       )
       // user exists
       await matchRequestWithSnapshot(
@@ -94,7 +95,7 @@ describe('requests', () => {
           username: 'evh@example.com',
           password: 'mypass-should-login',
           name: 'Eddie Van Halen',
-        })
+        }),
       )
     })
 
@@ -110,12 +111,12 @@ describe('requests', () => {
       await matchRequestWithSnapshot(
         200,
         request().get(`/auth/verify?verifyToken=${verifyToken}`),
-        { serializer }
+        { serializer },
       )
       await user.reload()
       expect(new Date().getTime() - user.emailVerifiedAt!.getTime()).toBeWithin(
         0,
-        500
+        500,
       )
       expect(user.emailVerificationToken).toBeNull()
       expect(user.emailVerificationSentAt).toBeNull()

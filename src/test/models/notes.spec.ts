@@ -33,7 +33,7 @@ describe('models', () => {
       const { Note } = appContext.models()
       const note = await Note.oneByOwner(sammy, { pid: youReallyGotMe.pid })
       expect(
-        await Note.oneByOwner(alex, { pid: youReallyGotMe.pid })
+        await Note.oneByOwner(alex, { pid: youReallyGotMe.pid }),
       ).toBeNull()
       expect(serializeModel(note)).toMatchSnapshot()
     })

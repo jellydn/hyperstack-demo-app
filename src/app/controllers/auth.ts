@@ -22,10 +22,10 @@ const requireUsernameSchema = requires(usernameSchema)
 const requireLoginParams = requires(loginSchema)
 const requireRegisterParams = requires(registerSchema)
 const requireVerifyToken = requires(
-  z.object({ verifyToken: z.string().min(0).max(128) })
+  z.object({ verifyToken: z.string().min(0).max(128) }),
 )
 const requireResetParams = requires(
-  z.object({ resetToken: z.string().min(0).max(128), password: passwordSchema })
+  z.object({ resetToken: z.string().min(0).max(128), password: passwordSchema }),
 )
 
 @Controller('auth')
@@ -34,12 +34,11 @@ export default class Auth {
   async login(req: Request) {
     const { username, password } = requireLoginParams(req.body)
     const user = await User.findOne({ where: { username } })
-    if (!user) {
+    if (!user)
       throw unauthorized('incorrect username or password')
-    }
-    if (!(await user.verifyPassword(password))) {
+
+    if (!(await user.verifyPassword(password)))
       throw unauthorized('incorrect username or password')
-    }
 
     return ok({ token: user.createAuthenticationToken() })
   }
@@ -62,17 +61,17 @@ export default class Auth {
   @Get('verify')
   async verify(req: Request) {
     const { verifyToken: emailVerificationToken } = requireVerifyToken(
-      req.query
+      req.query,
     )
-    if (!emailVerificationToken) {
+    if (!emailVerificationToken)
       throw err('missing verify token')
-    }
+
     const user = await User.findOne({
       where: { emailVerificationToken },
     })
-    if (!user) {
+    if (!user)
       throw err('missing, illegal, or expired verify token')
-    }
+
     await user.verified()
 
     return ok({ ok: true })
@@ -82,9 +81,9 @@ export default class Auth {
   async forgot(req: Request) {
     const { username } = requireUsernameSchema(req.body)
     const user = await User.findOne({ where: { username } })
-    if (!user) {
+    if (!user)
       throw unauthorized('incorrect username or password')
-    }
+
     await user.forgotPassword()
     await AuthMailer.forgotPassword(user).deliverLater()
 
@@ -94,15 +93,15 @@ export default class Auth {
   @Post('reset')
   async reset(req: Request) {
     const { resetToken, password } = requireResetParams(req.body)
-    if (!resetToken) {
+    if (!resetToken)
       throw err('missing reset token')
-    }
+
     const user = await User.findOne({
       where: { resetToken },
     })
-    if (!user) {
+    if (!user)
       throw err('missing, illegal, or expired reset token')
-    }
+
     await user.resetPassword(password)
 
     return ok({ ok: true })

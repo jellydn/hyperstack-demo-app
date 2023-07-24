@@ -3,7 +3,7 @@ import type { User } from '../models/user'
 
 class AuthMailer extends Mailer {
   static defaults = {
-    from: `Elle Postage <no-reply@elle-postage.example.com>`,
+    from: 'Elle Postage <no-reply@elle-postage.example.com>',
   }
 
   static forgotPassword(user: Partial<User>) {

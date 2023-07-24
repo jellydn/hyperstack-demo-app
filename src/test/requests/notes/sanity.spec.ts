@@ -46,7 +46,7 @@ describe('requests', () => {
       await matchRequestWithSnapshot(
         200,
         request().get('/notes').set(auth(token)),
-        { serializer: serializeNotes }
+        { serializer: serializeNotes },
       )
     })
     requests('should get one', async (request, _app, _server) => {
@@ -60,7 +60,7 @@ describe('requests', () => {
       await matchRequestWithSnapshot(
         200,
         request().get(`/notes/${note.pid}`).set(auth(token)),
-        { serializer: serializeOneNote }
+        { serializer: serializeOneNote },
       )
     })
     requests('should create', async (request) => {
@@ -68,10 +68,10 @@ describe('requests', () => {
       await matchRequestWithSnapshot(
         200,
         request()
-          .post(`/notes`)
+          .post('/notes')
           .set(auth(token))
           .send({ title: 'new note', content: 'dont ask dont know' }),
-        { serializer: serializeOneNote }
+        { serializer: serializeOneNote },
       )
     })
     requests('should update', async (request) => {
@@ -88,7 +88,7 @@ describe('requests', () => {
           .post(`/notes/${note.pid}`)
           .set(auth(token))
           .send({ title: 'boring note', content: 'boring content' }),
-        { serializer: serializeOneNote }
+        { serializer: serializeOneNote },
       )
     })
     requests('should be secure', async (request, _app, _server) => {
@@ -105,14 +105,14 @@ describe('requests', () => {
       })
 
       // no auth
-      await matchRequestWithSnapshot(401, request().get(`/notes`))
+      await matchRequestWithSnapshot(401, request().get('/notes'))
 
       // mallory snoops another user's note
       await matchRequestWithSnapshot(
         404,
         request()
           .get(`/notes/${note.pid}`)
-          .set(auth(mallory.createAuthenticationToken()))
+          .set(auth(mallory.createAuthenticationToken())),
       )
 
       // mallory updates another user's note
@@ -120,7 +120,7 @@ describe('requests', () => {
         404,
         request()
           .post(`/notes/${note.pid}`)
-          .set(auth(mallory.createAuthenticationToken()))
+          .set(auth(mallory.createAuthenticationToken())),
       )
     })
   })

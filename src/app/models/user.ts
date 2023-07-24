@@ -8,6 +8,7 @@ import {
 } from 'hyperstack'
 import { getProps } from '@hyperstackjs/initializer-jwt'
 import { Note } from './note'
+
 const {
   AllowNull,
   Column,
@@ -85,11 +86,11 @@ class User extends HyperModel<Partial<User>> {
       name: string
       isEmailVerified?: boolean
     },
-    opts?: any
+    opts?: any,
   ) {
-    if (await User.exists({ where: { username }, ...opts })) {
+    if (await User.exists({ where: { username }, ...opts }))
       throw new HyperModelError('user exists')
-    }
+
     const hashed = await hashPassword(password)
 
     const user = await User.create(
@@ -101,7 +102,7 @@ class User extends HyperModel<Partial<User>> {
         emailVerificationSentAt: new Date(),
         emailVerifiedAt: isEmailVerified ? new Date() : null,
       },
-      { opts, returning: true }
+      { opts, returning: true },
     )
     return user
   }
@@ -122,9 +123,9 @@ class User extends HyperModel<Partial<User>> {
   }
 
   async resetPassword(password: string) {
-    if (password.length < 6) {
+    if (password.length < 6)
       throw new HyperModelError('password too short')
-    }
+
     const hashed = await hashPassword(password)
     await this.update({
       password: hashed,

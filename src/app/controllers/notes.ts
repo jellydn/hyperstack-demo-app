@@ -3,6 +3,7 @@ import type { Request, Response } from 'hyperstack'
 import { getProps } from '@hyperstackjs/initializer-jwt'
 import { z } from 'zod'
 import { Note } from '../models/note'
+
 const { MustAuthWithJWT, currentUser } = getProps()
 
 const noteSchema = z.object({
@@ -21,11 +22,11 @@ export class NotesController {
   async getNote(req: Request) {
     const note = await Note.oneByOwner(
       currentUser(req),
-      requireNoteId(req.params)
+      requireNoteId(req.params),
     )
-    if (!note) {
+    if (!note)
       throw notfound('note not found')
-    }
+
     return note
   }
 
@@ -40,7 +41,7 @@ export class NotesController {
   async create(req: Request) {
     const note = await Note.createWithOwner(
       currentUser(req),
-      requireNoteParams(req.body)
+      requireNoteParams(req.body),
     )
     return ok({ note })
   }

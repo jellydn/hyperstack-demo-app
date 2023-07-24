@@ -27,7 +27,7 @@ describe('models', () => {
       expect(u.password).toMatch(/^pbkdf2_sha256/)
       expect(u.createAuthenticationToken()).toMatch(/^eyJh/)
       expect((await verifyJWT(u.createAuthenticationToken())).sub).toEqual(
-        'evh@example.com'
+        'evh@example.com',
       )
     })
     models('should reset password', async () => {
@@ -36,14 +36,14 @@ describe('models', () => {
       const alex = await User.findOne({
         where: { username: 'alex@example.com' },
       })
-      if (!alex) {
+      if (!alex)
         throw new Error('user is null')
-      }
+
       expect(alex.resetPassword('')).rejects.toThrow(/too short/)
       await alex.resetPassword('some-other-password')
       await alex.reload()
-      expect(await alex.verifyPassword('alex-might-password')).toBeFalse()
-      expect(await alex.verifyPassword('some-other-password')).toBeTrue()
+      expect(await alex.verifyPassword('alex-might-password')).toBeFalsy()
+      expect(await alex.verifyPassword('some-other-password')).toBeTruthy()
     })
     models('should set forgot token', async () => {
       await baseFixture()
@@ -51,9 +51,9 @@ describe('models', () => {
       const alex = await User.findOne({
         where: { username: 'alex@example.com' },
       })
-      if (!alex) {
+      if (!alex)
         throw new Error('user is null')
-      }
+
       expect(alex.resetToken).toBeNull()
       expect(alex.resetSentAt).toBeNull()
       await alex.forgotPassword()
@@ -66,9 +66,9 @@ describe('models', () => {
       const alex = await User.findOne({
         where: { username: 'alex@example.com' },
       })
-      if (!alex) {
+      if (!alex)
         throw new Error('user is null')
-      }
+
       expect(alex.emailVerificationToken).toBeTruthy()
       expect(alex.emailVerificationSentAt).toBeTruthy()
       expect(alex.emailVerifiedAt).toBeNull()

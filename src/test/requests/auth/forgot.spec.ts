@@ -1,6 +1,7 @@
 import { test } from '@hyperstackjs/testing'
 import { root } from '../../../config/settings'
 import { appContext } from '../../../app'
+
 const {
   requests,
   matchers: { matchRequestWithSnapshot, matchDeliveriesWithSnapshot },
@@ -12,7 +13,7 @@ const serializer = redactAndExpectMatch({
 })
 
 const serializeTokenEmails = redactAndExpectMatchInEmails(
-  /resetToken=[a-z0-9]{64}/g
+  /resetToken=[a-z0-9]{64}/g,
 )
 
 const serializeUser = redactAndExpectMatch({
@@ -34,7 +35,7 @@ describe('requests', () => {
           200,
           request().post('/auth/forgot').send({
             username: 'evh@example.com',
-          })
+          }),
         )
         await user.reload()
 
@@ -42,11 +43,11 @@ describe('requests', () => {
         expect(user.resetSentAt).toBeTruthy()
         expect(new Date().getTime() - user.resetSentAt!.getTime()).toBeWithin(
           0,
-          30 * 1000
+          30 * 1000,
         )
 
         matchDeliveriesWithSnapshot(1, { serializer: serializeTokenEmails })
-      }
+      },
     )
     requests(
       'should finish forgot password flow and reset password',
@@ -63,43 +64,43 @@ describe('requests', () => {
 
         await matchRequestWithSnapshot(
           400,
-          request().post(`/auth/reset`).send({ password: 'short', resetToken }),
-          { serializer, snapshotName: 'dont bypass our validation' }
+          request().post('/auth/reset').send({ password: 'short', resetToken }),
+          { serializer, snapshotName: 'dont bypass our validation' },
         )
 
         await matchRequestWithSnapshot(
           400,
-          request().post(`/auth/reset`).send({ resetToken: user.resetToken }),
-          { serializer, snapshotName: 'you have to have a password' }
+          request().post('/auth/reset').send({ resetToken: user.resetToken }),
+          { serializer, snapshotName: 'you have to have a password' },
         )
 
         const newPassword = 'this-is-a-new-password'
         await matchRequestWithSnapshot(
           200,
           request()
-            .post(`/auth/reset`)
+            .post('/auth/reset')
             .send({ password: newPassword, resetToken }),
-          { serializer, snapshotName: 'ok lets go' }
+          { serializer, snapshotName: 'ok lets go' },
         )
         await user.reload()
         expect(user.resetToken).toBeNull()
         expect(user.resetSentAt).toBeNull()
-        expect(await user.verifyPassword('mypass-should-login')).toBeFalse()
-        expect(await user.verifyPassword('this-is-a-new-password')).toBeTrue()
+        expect(await user.verifyPassword('mypass-should-login')).toBeFalsy()
+        expect(await user.verifyPassword('this-is-a-new-password')).toBeTruthy()
 
         // and you cannot reuse this token
         await matchRequestWithSnapshot(
           400,
-          request().post(`/auth/reset`).send({
+          request().post('/auth/reset').send({
             password: 'some-other-password',
             resetToken,
           }),
-          { serializer, snapshotName: 'cannot reuse token' }
+          { serializer, snapshotName: 'cannot reuse token' },
         )
 
         expect(serializeUser(user)).toMatchSnapshot()
         matchDeliveriesWithSnapshot(0)
-      }
+      },
     )
 
     requests('should validate', async (request) => {
@@ -114,27 +115,27 @@ describe('requests', () => {
         request().post('/auth/forgot').send({
           username: 'no-such-user@example.com',
         }),
-        { snapshotName: 'no such user' }
+        { snapshotName: 'no such user' },
       )
       await matchRequestWithSnapshot(
         400,
         request().post('/auth/forgot').send({
           username: 'this-is-not-email',
         }),
-        { snapshotName: 'not an email' }
+        { snapshotName: 'not an email' },
       )
       // no user
       await matchRequestWithSnapshot(
         400,
         request().post('/auth/forgot').send({}),
-        { snapshotName: 'no user field' }
+        { snapshotName: 'no user field' },
       )
 
       // no token
       await matchRequestWithSnapshot(
         400,
         request().post('/auth/reset').send({}),
-        { snapshotName: 'no reset token field' }
+        { snapshotName: 'no reset token field' },
       )
 
       // bad token
@@ -143,7 +144,7 @@ describe('requests', () => {
         request().post('/auth/reset').send({
           resetToken: 'foobarbaz',
         }),
-        { snapshotName: 'bad reset token' }
+        { snapshotName: 'bad reset token' },
       )
     })
   })

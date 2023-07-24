@@ -17,8 +17,8 @@ module.exports = {
         t.date('emailVerifiedAt'),
         t.string('resetToken'),
         t.date('resetSentAt'),
-        t.timestamps()
-      )
+        t.timestamps(),
+      ),
     )
   },
   down: async ({ query }) => {

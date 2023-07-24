@@ -1,6 +1,3 @@
-/* eslint-disable no-console */
-import pkg from '../../../package.json' // eslint-disable-line @typescript-eslint/no-unused-vars
-
 export default async () => ({
   logger: {
     level: 'error',

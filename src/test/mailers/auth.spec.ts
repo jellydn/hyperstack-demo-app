@@ -14,7 +14,7 @@ describe('mailers', () => {
       AuthMailer.sendWelcome({
         username: 'joe@example.com',
         name: 'joe',
-      })
+      }),
     )
     // a manual mailer test
     mailers('should send welcome: manual', async () => {

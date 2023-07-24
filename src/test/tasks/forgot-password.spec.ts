@@ -16,7 +16,7 @@ describe('tasks', () => {
         name: 'Eddie Van Halen',
       })
       expect(
-        await ForgotPassword.exec({ username: user.username }, app)
+        await ForgotPassword.exec({ username: user.username }, app),
       ).toMatchSnapshot()
     })
   })

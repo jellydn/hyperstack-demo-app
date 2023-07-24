@@ -1,5 +1,6 @@
 import { HyperModel, Schema } from 'hyperstack'
 import { User } from './user'
+
 const {
   AllowNull,
   BelongsTo,
@@ -45,7 +46,7 @@ class Note extends HyperModel<Partial<Note>> {
 
   static createWithOwner(
     user: User,
-    params: { content?: string; title?: string }
+    params: { content?: string; title?: string },
   ) {
     return Note.create({ ...params, ownerId: user.id })
   }

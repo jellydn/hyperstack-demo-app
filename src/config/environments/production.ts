@@ -1,37 +1,35 @@
-/* eslint-disable no-console */
-
 const getJWTSecret = () => {
-  if (process.env.JWT_SECRET) {
+  if (process.env.JWT_SECRET)
     return process.env.JWT_SECRET
-  }
+
   throw new Error(
-    'please set your production JWT secret in environments/production.ts'
+    'please set your production JWT secret in environments/production.ts',
   )
 }
 
 const getCookieSecret = () => {
-  if (process.env.COOKIE_SECRET) {
+  if (process.env.COOKIE_SECRET)
     return process.env.COOKIE_SECRET
-  }
+
   throw new Error(
-    'please set your production cookies secret in environments/production.ts'
+    'please set your production cookies secret in environments/production.ts',
   )
 }
 
 const getPostresURI = () => {
-  if (process.env.DATABASE_URL) {
+  if (process.env.DATABASE_URL)
     return process.env.DATABASE_URL
-  }
+
   throw new Error(
-    'please set your production Postgres connection in environments/production.ts'
+    'please set your production Postgres connection in environments/production.ts',
   )
 }
 const getRedisURI = () => {
-  if (process.env.REDIS_URL) {
+  if (process.env.REDIS_URL)
     return process.env.REDIS_URL
-  }
+
   throw new Error(
-    'please set your Redis connection in environments/production.ts'
+    'please set your Redis connection in environments/production.ts',
   )
 }
 
@@ -73,7 +71,7 @@ export default async () => ({
     ssl: true,
     native: true,
     synchronize: false, // for a real-world project, turn this off
-    migrate: false, // off in production, you call migrations explicitely
+    migrate: false, // off in production, you call migrations explicitly
     dropSchema: false, // obviously don't drop our schema
     truncate: false, // never truncate
     logging: false,

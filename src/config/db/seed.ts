@@ -10,7 +10,7 @@ export default seed(async ({ logger }) => {
       name: 'Alex Van Halen',
     })
     await Note.createWithOwner(alex, {
-      content: "you've got to roll with the punches to get what's real",
+      content: 'you\'ve got to roll with the punches to get what\'s real',
       title: 'jump',
     })
     const sammy = await User.createWithPassword({
@@ -19,12 +19,11 @@ export default seed(async ({ logger }) => {
       name: 'Sammy Hagar',
     })
     await Note.createWithOwner(sammy, {
-      content: "you got me so I don't know what I'm doin'",
+      content: 'you got me so I don\'t know what I\'m doin\'',
       title: 'you really got me',
     })
     logger.info('seed: done')
   }
-  if (isProduction()) {
+  if (isProduction())
     logger.info('not seeding production.')
-  }
 })
