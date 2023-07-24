@@ -1,0 +1,68 @@
+
+### Auth /auth
+
+POST http://localhost:5150/auth/login
+Content-Type: application/json
+
+{
+  "username": "alex@example.com",
+  "password": "alex-mighty-password"
+}
+
+###
+
+POST http://localhost:5150/auth/register
+Content-Type: application/json
+{
+}
+
+###
+
+GET http://localhost:5150/auth/verify
+Content-Type: application/json
+{
+}
+
+###
+
+POST http://localhost:5150/auth/forgot
+Content-Type: application/json
+{
+}
+
+###
+
+POST http://localhost:5150/auth/reset
+Content-Type: application/json
+{
+}
+
+### NotesController /notes
+### Need to add Authorization header with Bearer token, run /auth to get token
+
+GET http://localhost:5150/notes
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhbGV4QGV4YW1wbGUuY29tIiwicHJvdmlkZXIiOnsia2luZCI6ImxvY2FsIn0sImlhdCI6MTY5MDIxMTQ3NSwiZXhwIjoxNjkxNDIxMDc1fQ.1Fh81mf6_iG5a7iFGupmxJS2pf8WQDtL6YUxI7dHcMv-rg4l8WUpyrRookR-HTaf3UAbhj3TVZJXkdDx2gldDA
+Content-Type: application/json
+
+###
+
+POST http://localhost:5150/notes
+Content-Type: application/json
+{
+}
+
+### Get note by id /notes/{pid}
+### Define pid as a variable
+@pid=a82956db-6120-402d-9782-dac8dee1fae6
+GET http://localhost:5150/notes/{{pid}}
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhbGV4QGV4YW1wbGUuY29tIiwicHJvdmlkZXIiOnsia2luZCI6ImxvY2FsIn0sImlhdCI6MTY5MDIxMTQ3NSwiZXhwIjoxNjkxNDIxMDc1fQ.1Fh81mf6_iG5a7iFGupmxJS2pf8WQDtL6YUxI7dHcMv-rg4l8WUpyrRookR-HTaf3UAbhj3TVZJXkdDx2gldDA
+Content-Type: application/json
+{
+}
+
+###
+
+POST http://localhost:5150/notes/{pid}
+Content-Type: application/json
+{
+}
