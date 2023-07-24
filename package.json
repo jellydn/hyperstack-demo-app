@@ -3,10 +3,11 @@
   "version": "1.0.28",
   "private": true,
   "scripts": {
-    "dev": "ts-node-dev bin/hyperstack.ts start",
-    "build:watch": "tscp && concurrently -n typescript,aliases,public 'tsc -w' 'tsc-alias -w'",
-    "build:dev": "cd dist && node-dev bin/hyperstack.js start",
     "build": "tsc && tsc-alias && tscp",
+    "build:dev": "cd dist && node-dev bin/hyperstack.js start",
+    "build:watch": "tscp && concurrently -n typescript,aliases,public 'tsc -w' 'tsc-alias -w'",
+    "dev": "ts-node-dev bin/hyperstack.ts start",
+    "hyperstack": "bin/hyperstack",
     "test": "jest --runInBand --logHeapUsage --update-snapshot",
     "test:ci:apps": "pnpm test"
   },
@@ -22,6 +23,7 @@
   },
   "devDependencies": {
     "@hyperstackjs/testing": "1.0.31",
+    "@sentry/node": "^7.60.0",
     "@types/jest": "29.5.3",
     "@types/lodash": "4.14.195",
     "@types/node": "18.17.0",
@@ -38,7 +40,7 @@
     "ts-jest": "29.1.1",
     "ts-node-dev": "2.0.0",
     "tsc-alias": "1.8.7",
-    "tsup": "6.7.0",
+    "tsup": "7.1.0",
     "typescript-cp": "0.1.9"
   }
 }
