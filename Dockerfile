@@ -2,7 +2,7 @@
 # Hyperstack compile optimized build
 # Will run compiled ts to js code from dist/
 #
-FROM node:18-alpine as base 
+FROM node:18-alpine3.14 as base 
 RUN npm i -g pnpm
 
 FROM base as dependencies
