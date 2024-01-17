@@ -4,6 +4,8 @@ parent_path=$( cd "$(dirname "$0")" ; pwd -P )
 js_shim="$parent_path/hyperstack.js"
 
 if [ -f "$js_shim" ]; then
+  export NODE_OPTIONS="--max-old-space-size=4096"
+
   node $js_shim $*
 else 
   node -r ts-node/register $parent_path/hyperstack.ts $*
