@@ -27,8 +27,8 @@ dependencies:
     specifier: 5.1.6
     version: 5.1.6
   zod:
-    specifier: 3.21.4
-    version: 3.21.4
+    specifier: 3.22.3
+    version: 3.22.3
 
 devDependencies:
   '@hyperstackjs/testing':
@@ -112,7 +112,7 @@ packages:
       '@jridgewell/trace-mapping': 0.3.18
     dev: true
 
-  /@anatine/zod-openapi@1.14.2(openapi3-ts@2.0.2)(zod@3.21.4):
+  /@anatine/zod-openapi@1.14.2(openapi3-ts@2.0.2)(zod@3.22.3):
     resolution: {integrity: sha512-q0qHfnuNYVKu0Swrnnvfj9971AEyW7c8v9jCOZGCl5ZbyGMNG4RPyJkRcMi/JC8CRfdOe0IDfNm1nNsi2avprg==}
     peerDependencies:
       openapi3-ts: ^2.0.0 || ^3.0.0
@@ -120,7 +120,7 @@ packages:
     dependencies:
       openapi3-ts: 2.0.2
       ts-deepmerge: 6.2.0
-      zod: 3.21.4
+      zod: 3.22.3
 
   /@antfu/eslint-config-basic@0.38.6(@typescript-eslint/eslint-plugin@5.62.0)(@typescript-eslint/parser@5.62.0)(eslint@8.45.0)(typescript@5.1.6):
     resolution: {integrity: sha512-g5hxtS98MsQ6plCQ1rPx/K9+7ZZmUgdsWx84PJCwbaSuSklP1jZjuhMcjOPn/LW5t9QAPeb74T9+QsK3+IyNKQ==}
@@ -858,14 +858,14 @@ packages:
       execa: 5.1.1
       hygen: 6.2.11
       lodash: 4.17.21
-      zod: 3.21.4
+      zod: 3.22.3
     transitivePeerDependencies:
       - supports-color
 
   /@hyperstackjs/hypercontroller@1.0.31(mkdirp@3.0.1):
     resolution: {integrity: sha512-BqEFC4ETxkoQmD+YfrUlvLXaDwX7xfm9rketcdNLYzFHYJCotx0fvGZ2p9p4zHEHjxz99t5RnDtboOotxUp2tw==}
     dependencies:
-      '@anatine/zod-openapi': 1.14.2(openapi3-ts@2.0.2)(zod@3.21.4)
+      '@anatine/zod-openapi': 1.14.2(openapi3-ts@2.0.2)(zod@3.22.3)
       '@hyperstackjs/hypernight': 1.0.31
       ajv: 6.12.6
       async-express-mw: 0.1.2
@@ -887,7 +887,7 @@ packages:
       pino: 8.14.1
       reflect-metadata: 0.1.13
       uuid: 8.3.2
-      zod: 3.21.4
+      zod: 3.22.3
     transitivePeerDependencies:
       - mkdirp
       - supports-color
@@ -5513,7 +5513,7 @@ packages:
       yargs: 17.7.2
       yargs-interactive: 3.0.1
       yargs-parser: 21.1.1
-      zod: 3.21.4
+      zod: 3.22.3
     transitivePeerDependencies:
       - '@types/ioredis-mock'
       - '@types/node'
@@ -8843,9 +8843,6 @@ packages:
   /sqlite3@5.1.6:
     resolution: {integrity: sha512-olYkWoKFVNSSSQNvxVUfjiVbz3YtBwTJj+mfV5zpHmqW3sELx2Cf4QCdirMelhM5Zh+KDVaKgQHqCxrqiWHybw==}
     requiresBuild: true
-    peerDependenciesMeta:
-      node-gyp:
-        optional: true
     dependencies:
       '@mapbox/node-pre-gyp': 1.0.11
       node-addon-api: 4.3.0
@@ -10080,8 +10077,8 @@ packages:
       readable-stream: 3.6.2
     dev: true
 
-  /zod@3.21.4:
-    resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
+  /zod@3.22.3:
+    resolution: {integrity: sha512-EjIevzuJRiRPbVH4mGc8nApb/lVLKVpmUhAaR5R5doKGfAnGJ6Gr3CViAVjP+4FWSxCsybeWQdcgCtbX+7oZug==}
 
   github.com/jondot/openapi-snippet/78b7f5b115d4bfb99f10f21d9a3b0d19c54fc6e4(mkdirp@3.0.1):
     resolution: {tarball: https://codeload.github.com/jondot/openapi-snippet/tar.gz/78b7f5b115d4bfb99f10f21d9a3b0d19c54fc6e4}
