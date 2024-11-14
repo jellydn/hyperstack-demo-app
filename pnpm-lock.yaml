@@ -35,7 +35,7 @@ devDependencies:
     specifier: 1.0.31
     version: 1.0.31(@types/ioredis-mock@8.2.2)(@types/node@18.17.0)(@types/validator@13.7.17)(mkdirp@3.0.1)(sqlite3@5.1.6)(underscore@1.13.6)
   '@sentry/node':
-    specifier: ^7.60.0
+    specifier: 7.60.0
     version: 7.60.0
   '@types/jest':
     specifier: 29.5.3
